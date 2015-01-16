@@ -45,16 +45,19 @@ static const CGSize DROPSIZE = {40,40};
     }
     else if (sender.state == UIGestureRecognizerStateEnded){
         [self.animator removeBehavior:self.attachment];
+        self.gameView.path = nil;
     }
 }
 
 -(void)attachDroppingViewToPoint:(CGPoint)anchorPoint{
     if (self.droppingView){
         self.attachment = [[UIAttachmentBehavior alloc]initWithItem:self.droppingView attachedToAnchor:anchorPoint];
+        UIView *droppingView = self.droppingView;
+        __weak dropit *weakSelf = self;
         self.attachment.action = ^{UIBezierPath *path = [[UIBezierPath alloc]init];
-            [path moveToPoint:self.attachment.anchorPoint];
-            [path addLineToPoint:self.droppingView.center];
-            self.gameView.path = path;};
+            [path moveToPoint:weakSelf.attachment.anchorPoint];
+            [path addLineToPoint:droppingView.center];
+            weakSelf.gameView.path = path;};
         self.droppingView = nil;
         [self.animator addBehavior:self.attachment];
     }
