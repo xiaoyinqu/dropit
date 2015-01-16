@@ -15,6 +15,7 @@
 		9D69B2E81A67F54F0015C86D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D69B2E61A67F54F0015C86D /* LaunchScreen.xib */; };
 		9D69B2F41A67F54F0015C86D /* DropitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D69B2F31A67F54F0015C86D /* DropitTests.m */; };
 		9D69B2FF1A6800750015C86D /* dropit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D69B2FE1A6800750015C86D /* dropit.m */; };
+		9D69B3021A6912420015C86D /* BezierPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D69B3011A6912420015C86D /* BezierPathView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		9D69B2F31A67F54F0015C86D /* DropitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DropitTests.m; sourceTree = "<group>"; };
 		9D69B2FD1A6800750015C86D /* dropit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dropit.h; sourceTree = "<group>"; };
 		9D69B2FE1A6800750015C86D /* dropit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dropit.m; sourceTree = "<group>"; };
+		9D69B3001A6912420015C86D /* BezierPathView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezierPathView.h; sourceTree = "<group>"; };
+		9D69B3011A6912420015C86D /* BezierPathView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierPathView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +94,8 @@
 				9D69B2DE1A67F54F0015C86D /* ViewController.h */,
 				9D69B2DF1A67F54F0015C86D /* ViewController.m */,
 				9D69B2E11A67F54F0015C86D /* Main.storyboard */,
+				9D69B3001A6912420015C86D /* BezierPathView.h */,
+				9D69B3011A6912420015C86D /* BezierPathView.m */,
 				9D69B2E41A67F54F0015C86D /* Images.xcassets */,
 				9D69B2E61A67F54F0015C86D /* LaunchScreen.xib */,
 				9D69B2D71A67F54F0015C86D /* Supporting Files */,
@@ -226,6 +231,7 @@
 			files = (
 				9D69B2E01A67F54F0015C86D /* ViewController.m in Sources */,
 				9D69B2FF1A6800750015C86D /* dropit.m in Sources */,
+				9D69B3021A6912420015C86D /* BezierPathView.m in Sources */,
 				9D69B2DD1A67F54F0015C86D /* AppDelegate.m in Sources */,
 				9D69B2DA1A67F54F0015C86D /* main.m in Sources */,
 			);
